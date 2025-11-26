@@ -18,7 +18,8 @@ const Campus = () => {
                 }
             `}</style>
             <div className="flex items-center gap-2 h-[400px] w-full max-w-4xl mt-10 mx-auto my-30">
-                <div className="relative group flex-grow transition-all w-56 rounded-lg overflow-hidden h-[400px] duration-500 hover:w-full">
+                <div className="relative group flex-grow transition-all  sm:w-56 rounded-lg 
+                overflow-hidden h-[400px] duration-500 hover:w-full w-full">
                     <img className="h-full w-full object-cover object-center"
                         src={hafiz1}
                         alt="image" />
