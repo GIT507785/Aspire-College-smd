@@ -12,7 +12,7 @@ import Title from "./Title";
 const Programs = () => {
   return (
   
- <div>
+ <div id="programs">
 
         <div className="mt-25 sm:mt-20">
 <Title subTitle='OUr PROGRAM' title='What We Offer'/>

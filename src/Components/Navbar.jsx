@@ -5,11 +5,11 @@ import { Menu } from "lucide-react";
 
 const Navbar = () => {
     const navLinks = [
-        { name: 'Home', path: '/' },
-        { name: 'Programs', href:'#programs' },
-        { name: 'About', herf: '/' },
-        { name: 'Campus', href: '/' },
-    ];
+  { name: 'Home', path: '/' },
+  { name: 'Programs', path: '#programs' },
+  { name: 'About', path: '#about' },
+  { name: 'Campus', path: '#camp' },
+];
 
 
     const [isScrolled, setIsScrolled] = React.useState(false);
@@ -37,7 +37,7 @@ const Navbar = () => {
                 {/* Desktop Nav */}
                 <div className="hidden md:flex items-center gap-4 lg:gap-8">
                     {navLinks.map((link, i) => (
-                        <a key={i} href={link.path} className={`group flex flex-col gap-0.5 ${isScrolled ? "text-gray-700" : "text-white"}`}>
+                        <a key={i} onClick={window.scroll({behavior:"auto",})} href={link.path} className={`group flex flex-col gap-0.5 ${isScrolled ? "text-gray-700" : "text-white"}`}>
                             {link.name}
                             <div className={`${isScrolled ? "bg-gray-700" : "bg-white"} h-0.5 w-0 group-hover:w-full transition-all duration-300`} />
                         </a>

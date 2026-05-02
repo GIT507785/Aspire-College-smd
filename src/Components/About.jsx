@@ -4,7 +4,7 @@ import play_icon from "../assets/images/play_icon.png";
 
 const About = ({ setPlayState }) => {
   return (
-    <div
+    <div id="about"
       className="w-[90%] mx-auto my-[100px] -mt-1 flex items-center justify-between 
       max-[800px]:flex-col"
     >
